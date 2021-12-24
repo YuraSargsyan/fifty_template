@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main_container * {
+  padding: 20px;
+  height: auto;
+}
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.my_logo {
+  display: grid;
+  background-color: black;
+  color: white;
+  justify-items: center;
+}
+.my_logo a {
+  color: white;
+  text-decoration: none;
+}
+.my_logo a :nth-child(1):hover {
+  background-color: red;
+}
+.about_me {
+  display: grid;
+  background-color: grey;
+  justify-items: center;
+}
+.about_me h2 {
+  text-align: center;
+}
+.about_me > img {
+  align-self: center;
+  border-radius: 50%;
+  width: 60%;
+  height: 80%;
+}
+.my_work {
+  background-color: #f0efef;
+}
+.my_work .work_images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  object-fit: cover;
+  grid-gap: none;
+}
+.my_work > h2,
+.my_work p {
+  text-align: center;
+}
+.resume {
+  background-color: #3b3bcf;
+}
+.resume .year {
+  display: grid;
+  grid-template-columns: 20% 30% 30%;
+  grid-template-rows: repeat(7, 10%);
+}
+.resume .year :nth-of-type(odd) {
+  background-color: #fff;
+  color: black;
+}
+.swing_by {
+  background-color: #575656;
+  color: white;
+  text-align: center;
+}
+.contact {
+  background-color: green;
+}
+.contact p {
+  padding-left: 0;
+}
+.contact > p {
+  padding-left: 20px;
+}
+.contact .name_email {
+  background-color: #fff;
+}
+.contact .name_email input {
+  width: 100%;
+  padding: 10px 0;
+  border-style: hidden;
+}
+.contact .name_email hr {
+  padding: 0;
+  margin: 0;
+}
+.contact .name_email .send {
+  display: flex;
+  justify-content: right;
+  text-align: end;
+  width: 10%;
+}

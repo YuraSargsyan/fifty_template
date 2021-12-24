@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container * {
+    padding: 20px;
+    height: auto;
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.my_logo {
+    display: grid;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    a > {
+        color: white;
+        text-decoration: none;
+        :nth-child(1) {
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
+
+.about_me {
+    display: grid;
+    background-color: grey;
+    justify-items: center;
+    h2 {
+        text-align: center;
+    }
+    > img {
+        align-self: center;
+        border-radius: 50%;
+        width: 60%;
+        height: 80%;
+    }
+}
+
+.my_work {
+    background-color: rgb(240, 239, 239);
+      .work_images {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          object-fit: cover;
+          grid-gap: none;
+      }
+        > h2, p {
+            text-align: center;
+        }
+}
+
+.resume {
+    background-color: rgb(59, 59, 207);  
+      .year {
+          display: grid;
+          grid-template-columns: 20% 30% 30%;
+          grid-template-rows: repeat(7, 10%);
+          :nth-of-type(odd) {
+              background-color: #fff;
+              color: black;
+          }
+    }
+}
+
+.swing_by {
+    background-color: rgb(87, 86, 86);
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    background-color: green;
+      p {
+          padding-left: 0;
+      }
+
+      > p {
+        padding-left: 20px;
+      }
+      .name_email {
+          background-color: #fff;
+            input {
+                width: 100%;
+                padding: 10px 0;
+                border-style: hidden;
+                
+            }
+            hr {
+                padding: 0;
+                margin: 0;
+            }
+            .send {
+                
+                display: flex;
+                justify-content: right;
+                text-align: end;
+                width: 10%;
+            }
+      }
+      
+}
+
